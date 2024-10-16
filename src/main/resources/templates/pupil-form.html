@@ -7,10 +7,10 @@
 </head>
 <body>
   <br>
-  <form th:action="@{/processPupilFormV3}" method="post" >
-    <input type="text" name="pupilName" placeholder="Enter name of pupil"/>
-      <br>
-      <br>
+  <form th:action="@{/processPupilForm}" th:object="${pupil}" method="post" >
+    First Name: <input type="text" th:field="*{firstName}"><br></br>
+    Last Name: <input type="text" th:field="*{lastName}"><br></br>
+
     <input type="submit" value="Submit">
 
   </form>
