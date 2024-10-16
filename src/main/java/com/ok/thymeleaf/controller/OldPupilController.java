@@ -10,7 +10,7 @@ public class OldPupilController {
 
 	@RequestMapping("/showPupilForm")
 	public String showPupilForm() {
-		return "pupil-form";
+		return "old-pupil-form";
 	}
 
 	@RequestMapping("/processPupilForm")
