@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <html xmlns:th="http://www.thymeleaf.org">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Pupil Form</title>
+  <meta charset="UTF-8">
+  <title>Pupil Form</title>
 </head>
 <body>
-  <h2>Pupil Form</h2>
   <br>
-  <br>
-  <form th:action="@{/processPupilForm}" th:object="${pupil}" method="post">
-    First Name: <input type="text" th:field="*{firstName}"><br></br>
-    Last Name: <input type="text" th:field="*{lastName}"><br></br>
-    <input type="submit" value="Submit"/>
-
+  <form th:action="@{/processPupilFormV3}" method="post" >
+    <input type="text" name="pupilName" placeholder="Enter name of pupil"/>
+      <br>
+      <br>
+    <input type="submit" value="Submit">
 
   </form>
 </body>
