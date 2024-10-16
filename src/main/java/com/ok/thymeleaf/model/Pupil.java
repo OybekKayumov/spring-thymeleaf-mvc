@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 //@NoArgsConstructor
-//@AllArgsConstructor
+@AllArgsConstructor
 public class Pupil {
 
     private String firstName;
