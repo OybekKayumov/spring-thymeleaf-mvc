@@ -10,6 +10,11 @@
   <form th:action="@{/processPupilForm}" th:object="${pupil}" method="post" >
     First Name: <input type="text" th:field="*{firstName}"><br></br>
     Last Name: <input type="text" th:field="*{lastName}"><br></br>
+    <br><br>
+    <select th:field="*{sex}">
+      <option value="Boy">Boy</option>
+      <option value="Girl">Girl</option>
+    </select>
 
     <input type="submit" value="Submit">
 

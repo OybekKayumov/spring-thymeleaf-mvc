@@ -11,5 +11,6 @@ public class Pupil {
 
     private String firstName;
     private String lastName;
+    private String sex;
 
 }
