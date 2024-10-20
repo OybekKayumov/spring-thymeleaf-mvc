@@ -14,5 +14,4 @@ public class Pupil {
     private String sex;
     private String city;
     private String favoriteDrink;
-
 }
