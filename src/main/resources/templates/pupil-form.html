@@ -11,6 +11,30 @@
     First Name: <input type="text" th:field="*{firstName}"><br></br>
     Last Name: <input type="text" th:field="*{lastName}"><br></br>
 
+    Gender:
+    <select th:field="*{sex}">
+      <option th:value="Boy">Boy</option>
+      <option th:value="Girl">Girl</option>
+    </select>
+    <br><br>
+
+    City:
+    <select th:field="*{city}">
+      <option th:each="tempCity : ${cities}"
+              th:value="${tempCity}" th:text="${tempCity}">
+
+      </option>
+    </select>
+    <br><br>
+
+    Favourite Drink:
+    <input type="radio" th:field="*{favoriteDrink}" th:value="Tea" th:text="Tea"/>
+    <input type="radio" th:field="*{favoriteDrink}" th:value="Coffee"
+           th:text="Coffee"/>
+    <input type="radio" th:field="*{favoriteDrink}" th:value="Water"
+           th:text="Water"/>
+    <br><br>
+
     <input type="submit" value="Submit">
 
   </form>

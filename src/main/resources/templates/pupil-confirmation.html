@@ -9,7 +9,17 @@
     <h2>Pupil Confirmation</h2>
     <br><br>
 
-    The pupil is: <span th:text="${pupil.firstName} + ' '+ ${pupil.lastName}"></span>
+    The pupil is: <span th:text="${pupil.firstName} + ' '+ ${pupil.lastName}"/>.
+    <br><br>
+
+    This is a <span th:text="${pupil.sex}"/>.
+    <br><br>
+
+    Pupil from <span th:text="${pupil.city}"/>.
+    <br><br>
+
+    Pupil favorite drink is <span th:text="${pupil.favoriteDrink}"/>.
+    <br><br>
 
 </body>
 </html>
