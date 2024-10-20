@@ -5,12 +5,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-//@NoArgsConstructor
-//@AllArgsConstructor
+@NoArgsConstructor
+@AllArgsConstructor
 public class Pupil {
 
     private String firstName;
     private String lastName;
     private String sex;
+    private String city;
+    private String favoriteDrink;
 
 }
