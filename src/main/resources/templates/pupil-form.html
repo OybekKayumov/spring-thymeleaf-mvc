@@ -37,6 +37,14 @@
     th:value="${tempDrink}" th:text="${tempDrink}" />
     <br><br>
 
+    Favourite Cars:
+    <input type="checkbox" th:field="*{favoriteCars}" th:value="BMW">BMW</input>
+    <input type="checkbox" th:field="*{favoriteCars}" th:value="AUDI">AUDI
+    </input>
+    <input type="checkbox" th:field="*{favoriteCars}"
+           th:value="'ALFA ROMEO'">ALFA ROMEO</input>
+    <br><br>
+
     <input type="submit" value="Submit">
 
   </form>

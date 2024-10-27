@@ -21,5 +21,15 @@
     Pupil favorite drink is <span th:text="${pupil.favoriteDrink}"/>.
     <br><br>
 
+    Pupil favorite car(s) is <span th:text="${pupil.favoriteCars}"/>.
+    <br><br>
+
+    <ul>
+        <li th:each="oneCar : ${pupil.getFavoriteCars()}" th:text="${oneCar}"></li>
+    </ul>
+
+    <ol>
+        <li th:each="oneCar : ${pupil.getFavoriteCars()}" th:text="${oneCar}"></li>
+    </ol>
 </body>
 </html>
