@@ -28,11 +28,13 @@
     <br><br>
 
     Favourite Drink:
-    <input type="radio" th:field="*{favoriteDrink}" th:value="Tea" th:text="Tea"/>
-    <input type="radio" th:field="*{favoriteDrink}" th:value="Coffee"
-           th:text="Coffee"/>
-    <input type="radio" th:field="*{favoriteDrink}" th:value="Water"
-           th:text="Water"/>
+<!--    <input type="radio" th:field="*{favoriteDrink}" th:value="Tea" th:text="Tea"/>-->
+<!--    <input type="radio" th:field="*{favoriteDrink}" th:value="Coffee"-->
+<!--           th:text="Coffee"/>-->
+<!--    <input type="radio" th:field="*{favoriteDrink}" th:value="Water"-->
+<!--           th:text="Water"/>-->
+    <input type="radio" th:field="*{favoriteDrink}" th:each="tempDrink : ${drinks}"
+    th:value="${tempDrink}" th:text="${tempDrink}" />
     <br><br>
 
     <input type="submit" value="Submit">

@@ -18,12 +18,16 @@ public class PupilController {
     @Value("${cities}")
     private List<String> cities;
 
+    @Value("${drinks}")
+    private List<String> drinks;
+
     @GetMapping("/showPupilForm")
     public String showForm(Model model) {
         //Pupil pupil = new Pupil();
         //model.addAttribute("pupil", pupil);
         model.addAttribute("pupil", new Pupil());
         model.addAttribute("cities", cities);
+        model.addAttribute("drinks", drinks);
         return "pupil-form";
     }
 
