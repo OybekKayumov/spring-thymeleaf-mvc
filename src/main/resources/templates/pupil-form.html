@@ -38,11 +38,15 @@
     <br><br>
 
     Favourite Cars:
-    <input type="checkbox" th:field="*{favoriteCars}" th:value="BMW">BMW</input>
-    <input type="checkbox" th:field="*{favoriteCars}" th:value="AUDI">AUDI
-    </input>
-    <input type="checkbox" th:field="*{favoriteCars}"
-           th:value="'ALFA ROMEO'">ALFA ROMEO</input>
+<!--    <input type="checkbox" th:field="*{favoriteCars}" th:value="BMW">BMW</input>-->
+<!--    <input type="checkbox" th:field="*{favoriteCars}" th:value="AUDI">AUDI-->
+<!--    </input>-->
+    <input type="checkbox"
+           th:field="*{favoriteCars}"
+           th:each="tempCar : ${cars}"
+           th:value="${tempCar}"
+           th:text="${tempCar}"
+    />
     <br><br>
 
     <input type="submit" value="Submit">
